@@ -1,7 +1,7 @@
 const Homepage = () => {
 	return (
-		<div>
-			
+		<div className="main-container">
+			I&apos;m not sure what to put here
 		</div>
 	);
 };

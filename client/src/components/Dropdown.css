@@ -1,7 +1,6 @@
 .dropdown-menu {
 	position: absolute;
 	right: 0;
-	top: 3.4em;
 	display: flex;
 	align-items: center;
 	flex-direction: column;

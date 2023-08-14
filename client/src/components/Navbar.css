@@ -21,7 +21,8 @@
 
 .logo {
 	font-family: 'Rubik Maze', cursive;
-	font-size: 2rem;
+	font-size: 3rem;
+	margin-left: 0.25em;
 }
 
 .dropdown {

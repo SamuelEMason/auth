@@ -18,7 +18,7 @@ const Navbar = () => {
 			<nav className="main-header">
 				<span className="logo">
 					<Link className="nav-link" to="/">
-						Listo
+						a
 					</Link>
 				</span>
 				<ul className="nav-links">
@@ -34,13 +34,12 @@ const Navbar = () => {
 				<div className="dropdown" onClick={dropdownHandler}>
 					{dropdownEnabled ? <AiFillCloseCircle /> : <HiMenuAlt3 />}
 				</div>
-
-				<Dropdown
-					className="dropdown"
-					dropdownEnabled={dropdownEnabled}
-					setDropdownEnabled={setDropdownEnabled}
-				/>
 			</nav>
+			<Dropdown
+				className="dropdown"
+				dropdownEnabled={dropdownEnabled}
+				setDropdownEnabled={setDropdownEnabled}
+			/>
 		</>
 	);
 };
