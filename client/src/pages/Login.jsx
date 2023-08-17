@@ -37,6 +37,7 @@ const Login = () => {
 						name="username"
 						id="username"
 						placeholder="Username"
+						autoComplete="off"
 						value={username}
 						onChange={(e) => setUsername(e.target.value)}
 					/>{' '}

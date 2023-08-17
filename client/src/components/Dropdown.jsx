@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { PiPlantThin } from 'react-icons/pi';
 import PropTypes from 'prop-types';
 
 import './Dropdown.css';
@@ -35,8 +36,10 @@ const Dropdown = ({ dropdownEnabled, setDropdownEnabled }) => {
 				>
 					Register
 				</Link>
+				<div className='plant'>
+					<PiPlantThin />
+				</div>
 			</div>
-			<div className='overlay' />
 		</>
 	);
 };

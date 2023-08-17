@@ -5,15 +5,36 @@
 	justify-content: center;
 
 	height: 80vh;
-	width: 100%;
-	
+	max-width: 100%;
+
+	font-size: 1rem;
 }
 
-.homepage h2 {
-	margin-bottom: 1rem;
+.diamond {
+	position: relative;
+	bottom: 0rem;
+	font-size: 5rem;
+	margin: 1rem;
+	rotate: 180deg;
+	animation: 0.1ms infinite diamond;
+	cursor: pointer;
+	z-index: -1;
 }
 
-.homepage > p {
-	margin: 0.25rem;
-	margin-inline: 1rem;
+.diamond:hover {
+	filter: invert();
+}
+
+@keyframes diamond {
+	0% {
+		color: yellow;
+	}
+
+	50% {
+		color: rgb(255, 255, 255);
+	}
+
+	100% {
+		color: rgb(255, 132, 0);
+	}
 }

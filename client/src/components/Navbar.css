@@ -4,8 +4,8 @@
 	justify-content: space-between;
 
 	padding: 0.5em 1em;
-	background-color: rgba(24, 19, 1, 0.918);
-	background-image: linear-gradient(to right, rgba(99, 115, 156, 0.434), transparent);
+	background-color: rgba(24, 19, 1, 0.662);
+	background-image: linear-gradient(to right, rgba(99, 115, 156, 0.055), transparent);
 }
 
 .nav-links {

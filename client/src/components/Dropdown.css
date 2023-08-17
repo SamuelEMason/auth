@@ -6,8 +6,8 @@
 	justify-content: center;
 	flex-direction: column;
 
-	width: 100%;
-	height: 0px;
+	width: 0%;
+	height: 92vh;
 	overflow: hidden;
 	opacity: 0;
 	background-color: rgb(69, 0, 20);
@@ -30,8 +30,14 @@
 }
 
 .enabled {
-	height: 80vh;
+	width: 100%;
 	opacity: 1;
+}
+
+.plant {
+	font-size: 5rem;
+	margin: 2rem;
+	animation: 10s infinite plant-change;
 }
 
 @keyframes bg-change {
@@ -59,5 +65,19 @@
 
 	100% {
 	border-bottom: 1px solid black;
+	}
+}
+
+@keyframes plant-change {
+	0% {
+		color: rgba(250, 248, 248, 0.785);
+	}
+
+	50% {
+		color: rgb(26, 75, 33);
+	}
+
+	100% {
+		color: rgba(250, 248, 248, 0.785);
 	}
 }

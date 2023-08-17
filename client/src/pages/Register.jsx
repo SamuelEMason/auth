@@ -36,6 +36,7 @@ const Register = () => {
 						id="email"
 						placeholder="Email"
 						value={email}
+						autoComplete="off"
 						onChange={(e) => setEmail(e.target.value)}
 					/>
 				</div>
@@ -46,6 +47,7 @@ const Register = () => {
 						id="username"
 						placeholder="Username"
 						value={username}
+						autoComplete="off"
 						onChange={(e) => setUsername(e.target.value)}
 					/>{' '}
 				</div>
