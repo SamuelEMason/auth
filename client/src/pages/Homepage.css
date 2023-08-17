@@ -16,7 +16,7 @@
 	font-size: 5rem;
 	margin: 1rem;
 	rotate: 180deg;
-	animation: 1ms infinite diamond;
+	animation: 50ms infinite diamond;
 	cursor: pointer;
 	z-index: -1;
 }
