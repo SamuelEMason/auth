@@ -1,3 +1,8 @@
+:root {
+	--yellow: rgba(164, 138, 21, 0.726);
+	--black: rgba(1, 26, 14, 0.726);
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -11,6 +16,8 @@ body {
 	background-color: black;
 	color: aliceblue;
 	font-family: 'Exo 2', sans-serif;
+	background-image: url('./assets/dark-shore.jpg');
+	background-size: cover;
 	/* font-family: 'Quicksand', sans-serif; */
 }
 
@@ -22,43 +29,80 @@ body {
 
 	width: 100%;
 	height: 80vh;
-	padding: 2em;
 
-	background-color: rgb(75, 73, 73);
+}
+
+.main-container>p {
+	margin: 1rem;
 }
 
 /* REGISTER AND LOGIN */
-.register-form {
+.form {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 
-	width: inherit;
+	min-width: 35%;
 	margin: 1rem;
+	padding: 2rem;
 
-	
+	background-color: var(--yellow);
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+.form-title {
+	margin-bottom: 1rem;
 }
 
 .form-control {
 	display: flex;
 	align-items: center;
-	width: inherit;
+	justify-content: center;
+	width: 100%;
 
 	margin-bottom: 1rem;
 }
 
-.form-control > input,
+.form-control>input,
 .btn-register {
-	width: inherit;
 	height: 2rem;
 	border-radius: 5px;
+	width: inherit;
+
+	outline: none;
+	box-shadow: 1px 1px 1px black;
+	letter-spacing: 0.1rem;
 }
 
+.form-control>input {
+	padding: 1rem 0.5rem;
+	border: none;
+}
 
-.input-label {
-	position: relative;
-	right: 10em;
+.form-control>input::placeholder {
+	font-weight: bold;
+}
 
-	color: black;
+.btn-register {
+	font-family: inherit;
+	font-weight: bold;
+
+	background-color: #000;
+	color: #fff;
+	border: 1px solid white;
+}
+
+.btn-register:active {
+	background-color: rgb(135, 153, 188);
+	box-shadow: -1px -1px 1px black;
+
+}
+
+@media (max-width: 500px) {
+	body {
+		background-color: auto;
+
+	}
 }

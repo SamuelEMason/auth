@@ -10,11 +10,16 @@ import Navbar from './components/Navbar';
 
 
 const App = () => {
+	const user = 'a';
 	return (
 		<>
 			<Navbar />
 			<Routes>
-				<Route exact path="/" element={<Homepage />} />
+				{user ? (
+					<Route exact path="/" element={<Homepage />} />
+				) : (
+					<Route exact path="/" element={<h1>No user</h1>} />
+				)}
 				<Route exact path="/login" element={<Login />} />
 				<Route exact path="/register" element={<Register />} />
 			</Routes>

@@ -1,6 +1,7 @@
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const User = require('../models/User.js');
+const { json } = require('express');
 
 const getUsers = async (req, res) => {
 	try {
@@ -41,6 +42,7 @@ const getUserById = async (req, res) => {
 		});
 	}
 };
+
 const register = async (req, res) => {
 	const { username, email, password } = req.body;
 
@@ -110,7 +112,7 @@ const login = async (req, res) => {
 			{ expiresIn: '1w' }
 		);
 
-		res.cookie('token', token, { httpOnly: true, secure: true });
+		res.cookie('token', token, { httpOnly: true, withCredentials: true });
 
 		res.status(200).json({
 			success: true,

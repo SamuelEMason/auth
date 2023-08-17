@@ -3,8 +3,7 @@ const jwt = require('jsonwebtoken');
 const User = require('../models/User.js');
 
 const authenticateToken = (req, res, next) => {
-	const token = req.cookies.token;
-
+	const { token } = req.cookies;
 	if (!token) {
 		return res.status(400).json({
 			success: false,

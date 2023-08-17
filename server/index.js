@@ -15,7 +15,7 @@ const PORT = process.env.PORT;
 
 app.use(express.json());
 app.use(cookieParser(process.env.COOKIE_KEY));
-app.use(cors());
+app.use(cors({ origin: 'http://127.0.0.1:5173', credentials: true }));
 app.use(morgan('common'));
 
 /* ROUTES */
@@ -31,4 +31,3 @@ app.use('/auth', authRouter);
 		console.log(`Server running on PORT:${PORT}`.italic.blue);
 	});
 })();
-	

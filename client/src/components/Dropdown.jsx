@@ -14,25 +14,30 @@ const Dropdown = ({ dropdownEnabled, setDropdownEnabled }) => {
 	};
 
 	return (
-		<div
-			className={`dropdown-menu ${dropdownEnabled ? 'enabled' : 'disabled'}`}
-		>
-			<Link
-				className="menu-nav-link"
-				to="/login"
-				onClick={menuClickHandler}
+		<>
+			<div
+				className={`dropdown-menu ${
+					dropdownEnabled ? 'enabled' : 'disabled'
+				}`}
 			>
-				Login
-			</Link>
+				<Link
+					className="menu-nav-link"
+					to="/login"
+					onClick={menuClickHandler}
+				>
+					Login
+				</Link>
 
-			<Link
-				className="menu-nav-link"
-				to="/register"
-				onClick={menuClickHandler}
-			>
-				Register
-			</Link>
-		</div>
+				<Link
+					className="menu-nav-link"
+					to="/register"
+					onClick={menuClickHandler}
+				>
+					Register
+				</Link>
+			</div>
+			<div className='overlay' />
+		</>
 	);
 };
 

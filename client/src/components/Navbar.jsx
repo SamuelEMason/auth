@@ -18,7 +18,7 @@ const Navbar = () => {
 			<nav className="main-header">
 				<span className="logo">
 					<Link className="nav-link" to="/">
-						a
+						arch.ve
 					</Link>
 				</span>
 				<ul className="nav-links">
