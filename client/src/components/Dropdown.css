@@ -35,7 +35,7 @@
 }
 
 .plant {
-	font-size: 5rem;
+	font-size: 4rem;
 	margin: 2rem;
 	animation: 10s infinite plant-change;
 }
@@ -74,7 +74,7 @@
 	}
 
 	50% {
-		color: rgb(26, 75, 33);
+		color: rgb(64, 143, 76);
 	}
 
 	100% {

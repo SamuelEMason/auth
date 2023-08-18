@@ -1,16 +1,11 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
-
-import { setAuthToken } from '../redux/reducers/authReducer.js';
-import { login } from '../api/auth';
 
 const Login = () => {
 	const [username, setUsername] = useState('');
 	const [password, setPassword] = useState('');
 
 	const navigate = useNavigate();
-	const dispatch = useDispatch();
 
 	const submitHandler = async (e) => {
 		e.preventDefault();
@@ -19,9 +14,7 @@ const Login = () => {
 			password,
 		};
 
-		const response = await login(loggedUser);
-		dispatch(setAuthToken({ authToken: response.token }));
-
+		console.log(loggedUser);
 		setUsername('');
 		setPassword('');
 		navigate('/');

@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import { register } from '../api/auth';
-
 const Register = () => {
 	const [email, setEmail] = useState('');
 	const [username, setUsername] = useState('');
@@ -17,8 +15,8 @@ const Register = () => {
 			username,
 			password,
 		};
-		const response = await register(newUser);
-		console.log(response);
+
+		console.log(newUser);
 		setEmail('');
 		setUsername('');
 		setPassword('');
